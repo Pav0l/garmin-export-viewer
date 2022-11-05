@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "healthy-53d5a"
+  },
+  "targets": {
+    "healthy-53d5a": {
+      "hosting": {
+        "upload-healthy": [
+          "upload-healthy"
+        ]
+      }
+    }
+  }
+}

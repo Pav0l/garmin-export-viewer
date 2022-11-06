@@ -4,3 +4,16 @@
   padding: 2rem;
   text-align: center;
 }
+
+.uploadsList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+.listItem {
+  padding: 0 0.5rem;
+}

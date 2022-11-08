@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import { DragAndDrop } from "./components/Drag";
+import { Charts } from "./components/Chart";
 import {
   transformGarminCSV,
   SUPPORTED_COLUMNS,
@@ -41,6 +42,7 @@ function App() {
   return (
     <div>
       <DragAndDrop onUpload={onUploadHandler} />
+      <Charts charts={uploadsList} />
     </div>
   );
 }

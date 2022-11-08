@@ -1,5 +1,6 @@
 import { useCallback } from "react";
 import { useDropzone } from "react-dropzone";
+import { SUPPORTED_COLUMNS } from "../libs/garmin-transformer";
 import "./Drag.css";
 
 interface Props {
@@ -29,6 +30,12 @@ export function DragAndDrop({ onUpload }: Props) {
     <div className="drag" {...getRootProps()}>
       <input {...getInputProps()} />
       <p>Drop your Garmin Connect CSV exports here to visualize them</p>
+      <p>Your data does not leave your browser and is removed when you reload the page</p>
+      <p>
+        Supported Garmin Connect reports: {SUPPORTED_COLUMNS.CLIMBED_FLOORS}, {SUPPORTED_COLUMNS.INTENSITY_MINUTES},{" "}
+        {SUPPORTED_COLUMNS.STEPS}, {SUPPORTED_COLUMNS.SLEEP}, {SUPPORTED_COLUMNS.RESTING_HEART_RATE},{" "}
+        {SUPPORTED_COLUMNS.STRESS} and {SUPPORTED_COLUMNS.VO2_MAX}
+      </p>
     </div>
   );
 }
